@@ -1,0 +1,1 @@
+Zum pushen in den Ordner Desktop/website_nico/nicolashamel.github.io gehen und den Befehl publish eingeben. Es wurde nämlich bereits ein alias erzeugt für die befehlkette: git add. && git commit -m "Update" && git push
