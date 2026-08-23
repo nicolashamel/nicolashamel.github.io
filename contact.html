@@ -5,12 +5,16 @@
     <title>Kontakt</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
 <header>
+
     <a href="index.html" class="logo">Nicolas Hamel</a>
 
-    <nav>
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Menü öffnen">
+        ☰
+    </button>
+
+    <nav id="main-nav">
         <ul>
             <li><a href="musiktheorie.html">Musiktheorie</a></li>
             <li><a href="komposition.html">Komposition</a></li>
@@ -18,7 +22,20 @@
             <li><a href="contact.html">Kontakt</a></li>
         </ul>
     </nav>
+
 </header>
+<script>
+
+function toggleMenu() {
+
+    const nav = document.getElementById("main-nav");
+
+    nav.classList.toggle("open");
+
+}
+
+</script>
+<body>
 
 <section class="page-content">
     <h1>Kontakt</h1>
