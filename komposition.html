@@ -5,22 +5,38 @@
     <title>Kompositionen</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
 
 <header>
-    <a href="index.html" class="logo">
-        Nicolas Hamel
-    </a>
 
-    <nav>
+    <a href="index.html" class="logo">Bastian Hamel</a>
+
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Menü öffnen">
+        ☰
+    </button>
+
+    <nav id="main-nav">
         <ul>
-            <li><a href="musiktheorie.html">Musiktheorie</a></li>
-            <li><a href="komposition.html">Komposition</a></li>
-            <li><a href="physik.html">Physik & Mathematik</a></li>
-            <li><a href="contact.html">Kontakt</a></li>
+            <li><a href="works.html">Works</a></li>
+            <li><a href="exhibitions.html">Exhibitions</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="contact_basti.html">Contact</a></li>
         </ul>
     </nav>
+
 </header>
+<script>
+
+function toggleMenu() {
+
+    const nav = document.getElementById("main-nav");
+
+    nav.classList.toggle("open");
+
+}
+
+</script>
+<body>
 
 <section class="page-content">
 

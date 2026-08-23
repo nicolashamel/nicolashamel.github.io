@@ -195,3 +195,111 @@ audio{
     margin-top:15px;
 
 }
+
+/* =========================================
+
+   MOBILE
+
+   ========================================= */
+
+.menu-toggle {
+
+    display: none;
+
+}
+
+/* Smartphones und Tablets */
+
+@media (max-width: 768px) {
+
+    /* Header */
+
+    header {
+
+        padding: 15px 20px;
+
+        min-height: 60px;
+
+    }
+
+    .logo {
+
+        font-size: 1.3rem;
+
+    }
+
+    /* Hamburger Button */
+
+    .menu-toggle {
+
+        display: block;
+
+        background: none;
+
+        border: none;
+
+        font-size: 24px;
+
+        cursor: pointer;
+
+        padding: 5px;
+
+        color: #000;
+
+    }
+
+    /* Navigation */
+
+    nav {
+
+        display: none;
+
+        position: absolute;
+
+        top: 60px;
+
+        left: 0;
+
+        width: 100%;
+
+        background: rgba(255, 255, 255, 0.95);
+
+        backdrop-filter: blur(8px);
+
+        border-bottom: 1px solid #eee;
+
+    }
+
+    nav.open {
+
+        display: block;
+
+    }
+
+    nav ul {
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 0;
+
+        padding: 10px 20px 20px;
+
+    }
+
+    nav li {
+
+        width: 100%;
+
+    }
+
+    nav a {
+
+        display: block;
+
+        padding: 12px 0;
+
+        font-size: 16px;
+
+    }
