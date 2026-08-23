@@ -197,16 +197,19 @@ audio{
 }
 
 /* =========================================
-
    MOBILE
-
    ========================================= */
 
 .menu-toggle {
-
     display: none;
-
+    background: none;
+    border: none;
+    color: #000;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px;
 }
+
 
 /* Smartphones und Tablets */
 
@@ -215,103 +218,83 @@ audio{
     /* Header */
 
     header {
-
         padding: 15px 20px;
-
         min-height: 60px;
-
     }
 
     .logo {
-
         font-size: 1.3rem;
-
     }
 
-    /* Hamburger standardmäßig verstecken */
 
-.menu-toggle {
-
-    display: none;
-
-    background: none;
-
-    border: none;
-
-    color: #000;
-
-    font-size: 24px;
-
-    cursor: pointer;
-
-    padding: 5px;
-
-}
-
-/* Nur auf Smartphones anzeigen */
-
-@media (max-width: 768px) {
+    /* Hamburger */
 
     .menu-toggle {
-
         display: block;
-
+        margin-left: auto;
     }
 
-}
 
-    /* Navigation */
+    /* Navigation zunächst verstecken */
 
     nav {
-
         display: none;
-
         position: absolute;
-
         top: 60px;
-
         left: 0;
-
         width: 100%;
-
         background: rgba(255, 255, 255, 0.95);
-
         backdrop-filter: blur(8px);
-
         border-bottom: 1px solid #eee;
-
     }
+
+
+    /* Navigation öffnen */
 
     nav.open {
-
         display: block;
-
     }
 
+
+    /* Navigation untereinander */
+
     nav ul {
-
         display: flex;
-
         flex-direction: column;
-
         gap: 0;
-
         padding: 10px 20px 20px;
-
     }
 
     nav li {
-
         width: 100%;
-
     }
 
     nav a {
-
         display: block;
-
         padding: 12px 0;
-
         font-size: 16px;
-
     }
+
+
+    /* Inhalt */
+
+    .page-content {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 100px 20px 50px;
+    }
+
+    .page-content h1 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+
+    /* Audio */
+
+    audio {
+        width: 100%;
+    }
+
+}
