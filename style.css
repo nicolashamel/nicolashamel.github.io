@@ -228,25 +228,37 @@ audio{
 
     }
 
-    /* Hamburger Button */
+    /* Hamburger standardmäßig verstecken */
+
+.menu-toggle {
+
+    display: none;
+
+    background: none;
+
+    border: none;
+
+    color: #000;
+
+    font-size: 24px;
+
+    cursor: pointer;
+
+    padding: 5px;
+
+}
+
+/* Nur auf Smartphones anzeigen */
+
+@media (max-width: 768px) {
 
     .menu-toggle {
 
         display: block;
 
-        background: none;
-
-        border: none;
-
-        font-size: 24px;
-
-        cursor: pointer;
-
-        padding: 5px;
-
-        color: #000;
-
     }
+
+}
 
     /* Navigation */
 
