@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aufsätze</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<header>
+
+    <a href="index.html" class="logo">Nicolas Hamel</a>
+
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Menü öffnen">
+        ☰
+    </button>
+
+    <nav id="main-nav">
+        <ul>
+            <li><a href="musiktheorie.html">Musiktheorie</a></li>
+            <li><a href="komposition.html">Komposition</a></li>
+            <li><a href="physik.html">Physik & Mathematik</a></li>
+            <li><a href="aufsätze.html">Aufsätze</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+</header>
+<script>
+
+function toggleMenu() {
+
+    const nav = document.getElementById("main-nav");
+
+    nav.classList.toggle("open");
+
+}
+
+</script>
+<body>
+
+<section class="page-content">
+
+    <h1>
+        Aufsätze
+    </h1>
+
+
+    <div class="musiktheorie">
+
+        <h2>
+            Kriegserklärung gegen die Realität
+        </h2>
+
+        <div class="musiktheorie-meta">
+            Nicolas Hamel (2026)
+        </div>
+
+        <p class="abstract">
+            In dieser Arbeit geht es um die Herleitung des Brechungsgesetzes und des Relexionsgesetzes nach Snellius.
+        </p>
+
+        <a href="pdfs/Krieg_gegen_die_Realität.pdf"
+           target="_blank"
+           class="pdf-link">
+           PDF öffnen
+        </a>
+
+    </div>
+
+</section>
+
+</body>
+</html>
